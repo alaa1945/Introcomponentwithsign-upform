@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+        --Red: hsl(0, 100%, 74%);
+        --Green: hsl(154, 59%, 51%);
+        /* ### Accent */
+        --Blue: hsl(248, 32%, 49%);
+        /* ### Neutral */
+        --Dark-Blue: hsl(249, 10%, 26%);
+        --Grayish-Blue: hsl(246, 25%, 77%);
+}
+
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+}
+
+body {
+        background-image: url(../images/bg-intro-mobile.png);
+        background-color: var(--Red);
+        font-family: 'Poppins', sans-serif;
+        font-size: 16px;
+        overflow-x: hidden;
+}
+
+main {
+        margin-top: 5.5rem;
+        text-align: center;
+}
+
+.intro {
+        width: 100%;
+        max-width: 500px;
+        margin: auto;
+}
+
+.intro .intro-title {
+        color: #ffffff;
+        font-size: 1.7rem;
+        line-height: 38px;
+}
+
+.intro .intro-description {
+        color: #ffffff;
+        padding: 1rem 1.5rem;
+}
+
+.form-container {
+        margin: 0 10px;
+}
+
+.offer {
+        background-color: var(--Blue);
+        width: 100%;
+        max-width: 540px;
+        margin: 3rem auto 1.6rem;
+        padding: 1.1rem 2rem;
+        border-radius: 10px;
+}
+
+.offer-freeTrial {
+        color: #ffffff;
+        font-size: 1rem;
+        font-weight: 500;
+        padding: 0 1rem;
+}
+
+.offer-price {
+        color: var(--Grayish-Blue);
+        font-size: 0.9rem;
+        font-weight: 100 !important;
+}
+
+.form form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 540px;
+        margin: auto;
+        padding: 1rem;
+        background-color: #ffffff;
+        border-radius: 10px;
+}
+
+.form form input {
+        padding: 1.23rem;
+        border: 1px solid var(--Grayish-Blue);
+        border-radius: 7px;
+        margin: 10px;
+        outline: none;
+        color: var(--Dark-Blue);
+        font-size: 0.9rem;
+        font-weight: 700;
+        position: relative;
+}
+
+.form form input:focus {
+        border: 1px solid black;
+}
+
+.input-field {
+        display: flex;
+        flex-direction: column;
+}
+
+.icon {
+        background-image: url(../images/icon-error.svg);
+        background-repeat: no-repeat;
+        background-position: 95%;
+        border: 1px solid var(--Red) !important;
+}
+
+.hide {
+        visibility: hidden;
+}
+
+.error-msg {
+        color: var(--Red);
+        font-size: 0.7rem;
+        font-weight: 600;
+        font-style: italic;
+        margin-top: -10px;
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 13px;
+
+}
+
+#submitbtn {
+        background-color: var(--Green);
+        color: #ffffff;
+        text-transform: uppercase;
+        font-size: 0.9rem;
+        font-weight: 500;
+        border: none;
+}
+
+#submitbtn:hover {
+        opacity: 0.7;
+}
+
+.terms-and-Services {
+        font-size: 0.7rem;
+        padding: 0 2rem;
+        color: var(--Grayish-Blue);
+        margin-bottom: 8px;
+}
+
+.terms-and-Services span {
+        color: var(--Red);
+        font-weight: 600;
+}
+
+.attribution {
+        padding: 0.2rem 0;
+        font-size: 11px;
+        text-align: center;
+        color: #ffffff;
+}
+
+.attribution a {
+        color: var(--Blue);
+        font-weight: 700;
+}
+
+@media(min-width:1024px) {
+        body {
+                background-image: url(../images/bg-intro-desktop.png);
+        }
+
+        main {
+                display: flex;
+                flex-direction: row;
+                width: 100vw;
+                height: 100vh;
+                justify-content: space-evenly;
+                align-items: center;
+                margin-top: 0;
+        }
+
+        .container {
+                display: flex;
+                justify-content: space-evenly;
+        }
+
+        .intro {
+                margin-right: 2rem;
+                text-align: left;
+        }
+
+        .intro .intro-title {
+                font-size: 3.1rem;
+                font-weight: 700;
+                line-height: 3.5rem;
+        }
+
+        .intro .intro-description {
+                padding: 1.8rem 0;
+        }
+
+        .offer {
+                width: 800px;
+        }
+
+        .form form {
+                padding: 1.87rem;
+        }
+
+        .terms-and-Services {
+                padding-top: 6px;
+        }
+}
